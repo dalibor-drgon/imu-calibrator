@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body, html {
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	font-family: Arial, sans-serif;
+}
+body {
+    margin: 2rem 0;
+}
+input, select, textarea {
+	width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+	border-radius: 0;
+	margin: 1rem 0;
+	padding: 5px 1%;
+	background: #fffbfb;
+	border: 1px solid #dddddd;
+	font-family: monospace, sans-serif;
+}
+input[type=submit] {
+    background-color: #437aff;
+    color: white;
+    font: 1rem sans-serif;
+    padding: 0.5rem;
+    border-color: blue;
+}
+h3 {
+	margin: 15px 0px 10px 0px;
+}
+.float33 {
+	width: 31.2%;
+	margin-right: 2%;
+	float: left;
+}
+.float50 {
+	width: 47.9%;
+	margin-right: 2%;
+	float: left;
+}
+.float input {
+	width: 94%;
+	padding: 5px 3%;
+}
+.content {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+.status {
+    border: 1px solid #e4980d;
+    background-color: #ffda95;
+    padding: 0.8rem 1rem;
+}
+.status.fatal {
+    border-color: #d00000;
+    background-color: #fdbcbc;
+}
+.status.success {
+    border-color: #0b0;
+    background-color: #a3f9a3;
+}
+div {
+    margin: 0.5rem 0;
+}
+.results {
+    border: 0px solid white;
+    background-color: white;
+    resize: none;
+}
+.hidden {
+    display: none;
+}
