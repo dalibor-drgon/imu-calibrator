@@ -30,7 +30,7 @@ static float calculate_cost(float mag, unsigned n, const acc_calibration_entry *
         Vector3f off_corrected = meas_vec - offset;
         Vector3f corrected = sensitivity * off_corrected;
 #if 1
-        float dist = sqrt(corrected.dot(corrected)) - mag;
+        float dist = abs(sqrt(corrected.dot(corrected)) - mag);
         float cost_add = dist * dist;
 #else
         Vector3f off_corrected_norm = off_corrected * (mag / sqrt(off_corrected.dot(off_corrected)));
